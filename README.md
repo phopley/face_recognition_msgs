@@ -5,11 +5,11 @@ Message that sends an array of faces recognised
 - uint16[] ids_detected
 - string[] names_detected
 ## scan_for_faces.action
-This action scans by moving the head/camera for faces that are recognised
+This action scans by moving the head/camera for faces that are recognised  
 Goal
-- none
-Result
-- face_recognition detected
-Feedback
+- none  
+Result  
+- face_recognition detected  
+Feedback  
 - float32 progress
 - face_recognition detected
