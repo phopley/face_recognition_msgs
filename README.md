@@ -1,15 +1,30 @@
 # face_recognition_msgs
-ROS message package containing the following:
+
+ROS Face recognition messages and actions.
+
 ## face_recognition.msg
-Message that sends an array of faces recognised
-- uint16[] ids_detected
-- string[] names_detected
+
+This message passes two arrays of faces recognised. One array conatins the subjects id's and the other the subjects names.
+
+* `uint16[] ids_detected`:  
+  The id's of the subjects identified
+  
+* `string[] names_detected`:  
+  The names of the subjects identified
+  
 ## scan_for_faces.action
-This action scans by moving the head/camera for faces that are recognised  
+
+This action will scan for known faces by moving the head/camera.
+
 Goal
-- none  
+* none
+
 Result  
-- face_recognition detected  
+* `face_recognition detected`:  
+  The arrays of ID's and names recognised during the complete scan
+  
 Feedback  
-- float32 progress
-- face_recognition detected
+* `float32 progress`:  
+  The percentage of the action complete
+* `face_recognition detected`:  
+  The arrays of ID's and names recognised during the last individual scan
