@@ -1,10 +1,9 @@
-# This action scans by moving the head/camera for faces that are recognised
+# This action scans the next camera image for faces that are recognised
 # There are no parameters to start the action
 ---
-# Results of the final image/position scanned
-face_recognition detected
+# Results of the scan
+uint16[] ids_detected
+string[] names_detected
 ---
-# Percentage complete and result of the latest image/position scanned
-float32 progress
-face_recognition detected
+# No parameters for feedback
 
