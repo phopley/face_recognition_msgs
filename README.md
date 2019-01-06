@@ -4,7 +4,7 @@ ROS Face recognition action.
  
 ## scan_for_faces.action
 
-This action will scan the next camera image for known faces
+This action will scan the last camera image for known faces
 
 Goal
 * none
