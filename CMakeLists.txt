@@ -8,8 +8,6 @@ project(face_recognition_msgs)
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
 find_package(catkin REQUIRED COMPONENTS
-  std_msgs
-  message_generation
   actionlib_msgs
 )
 
@@ -47,10 +45,9 @@ find_package(catkin REQUIRED COMPONENTS
 ##   * add every package in MSG_DEP_SET to generate_messages(DEPENDENCIES ...)
 
 ## Generate messages in the 'msg' folder
-add_message_files(
-   FILES
-   face_recognition.msg
-)
+##add_message_files(
+##   FILES
+##)
 
 ## Generate services in the 'srv' folder
 # add_service_files(
@@ -104,7 +101,7 @@ generate_messages(
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES rodney_msgs
-  CATKIN_DEPENDS message_runtime std_msgs actionlib_msgs
+  CATKIN_DEPENDS actionlib_msgs
 #  DEPENDS system_lib
 )
 
