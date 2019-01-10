@@ -2,7 +2,7 @@
 Changelog for package face_recognition_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Unreleased
+1.0.0 (2019-01-10)
 ------------------
 * Action message now used for a single scan
 
